@@ -1,0 +1,43 @@
+.images-register {
+    background-image: url("./images/Register.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 650px;
+}
+
+.form-container {
+    display: flexbox;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 1px 1px 25px olive;
+    padding: 5px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+ 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+}
+
+input.text {
+    display: block;
+    width: 300px;
+    text-align: left;
+
+}
+
+input.submit {
+    margin: 20px 0 0 200px;
+    width: auto;
+
+}
