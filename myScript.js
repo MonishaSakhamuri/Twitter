@@ -14,7 +14,7 @@ class User{
     constructor(user1,email1,password1)
    {
         this.username=user1;
-        this.email=email;
+        this.email=email1;
         this.password=password1;
     }
     
