@@ -1,9 +1,9 @@
-const login1=document.getElementById("login");
+const login_m=document.getElementById("login");
 const reg=document.getElementById("formreg");
-const note=document.getElementById("pst");
-if(login1) login1.addEventListener('submit',loginpage)
+const msg=document.getElementById("pst");
+if(login_m) login_m.addEventListener('submit',loginpage)
 if(reg) reg.addEventListener('submit',registerpage)
-if(note) note.addEventListener('submit',postpage)
+if(msg) msg.addEventListener('submit',postpage)
 function registerpage(e){
     e.preventDefault();
     let username1=document.getElementById('username').value;
