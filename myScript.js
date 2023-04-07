@@ -1,10 +1,10 @@
 const login1=document.getElementById("login");
 const reg=document.getElementById("formreg");
 const note=document.getElementById("pst");
-if(login1) login1.addEventListener('submit',funlogin)
-if(reg) reg.addEventListener('submit',funregister)
-if(note) note.addEventListener('submit',funnote)
-function funregister(e){
+if(login1) login1.addEventListener('submit',loginpage)
+if(reg) reg.addEventListener('submit',registerpage)
+if(note) note.addEventListener('submit',postpage)
+function registerpage(e){
     e.preventDefault();
     let username1=document.getElementById('username').value;
     let emailaddress=document.getElementById('email').value;
@@ -45,7 +45,7 @@ class User{
 let regi= new User(username1,emailaddress,passwrd);
      console.log(regi);
 }  
-function funlogin(e)
+function loginpage(e)
 {
     e.preventDefault()
 
@@ -81,29 +81,29 @@ function funlogin(e)
     console.log(user1);
 }
 
-function funnote(e)
+function postpage(e)
 {
     e.preventDefault()
    
-    let note1=document.getElementById('post').value;
+    let psth=document.getElementById('post').value;
    
    
     class User{
-        constructor(note)
+        constructor(posthere)
         {
            
-            this.note=note;
+            this.posthere=posthere;
            
         }
-        getnote(){
-            return this.note;
+        getposthere(){
+            return this.posthere;
         }
-        setnote(newnote){
-            this.note = newnote;
+        setposthere(posthere){
+            this.posthere = posthere;
         }
     }
 
-    const user1=new User(note1);
+    const user1=new User(psth);
     console.log(user1);
 }
 
