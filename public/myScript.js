@@ -1,13 +1,11 @@
 let getBtn = document.getElementById("btn-users");
- if(getBtn) getBtn.addEventListener('click',getAllUsers);
-        function getAllUsers()
+if(getBtn) getBtn.addEventListener('click',getAllUsers);
+function getAllUsers()
 {
 fetch('http://localhost:3000/users/test').
 then((res)=>res.json()).
 then((data)=>console.log(data))
-.catch(err => {
-    console.log(err.message);
-  })
+.catch((err) => console.log(err));
 }
 const login_m = document.getElementById("login");
 const reg = document.getElementById("formreg");
