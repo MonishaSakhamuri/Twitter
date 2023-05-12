@@ -15,7 +15,7 @@ createTable();
 
 async function create(post) {
 
-const sql = `INSERT INTO post (userID,posts)
+const sql = `INSERT INTO post (userID,post1)
   VALUES ("${post.userID}","${post.posts}");
 `
 
@@ -50,7 +50,7 @@ async function deletePost(post) {
     }
 async function editPost(post) {
   let sql = `UPDATE posts 
-    SET posts = "${post.posts}"
+    SET post1 = "${post.posts}"
     WHERE postID = ${post.postID}
   `;
   

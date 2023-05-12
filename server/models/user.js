@@ -81,4 +81,4 @@ async function deleteUser(user) {
 
   
 
-module.exports = {login, register, editUser, deleteUser, getAllUsers};
+module.exports = {login, register, editUser, deleteUser, getAllUsers}; 
