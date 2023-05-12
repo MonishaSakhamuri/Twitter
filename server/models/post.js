@@ -15,7 +15,7 @@ createTable();
 
 async function create(post) {
 
-const sql = `INSERT INTO post (userID,post1)
+const sql = `INSERT INTO posts (userID,post1)
   VALUES ("${post.userID}","${post.posts}");
 `
 
